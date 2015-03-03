@@ -401,6 +401,7 @@ JS;
 		if($optionSet && $id && $name){
 			$selectField = '<div class="field selectfield">';
 			if($name != 'None'){
+				$name = str_replace(' ','-', $name);
 				$selectField .= "<label for='{$name}'>$name</label><select name='{$name}' id='{$id}'>";
 			} else {
 				$selectField .= "<label for='{$name}'>&nbsp;</label><select name='{$name}' id='{$id}'>";
